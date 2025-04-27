@@ -9,7 +9,7 @@ interface CardProps {
   handleCardClick: () => void
 }
 
-function Card({ uniqueId, shapeId, shape, isFlipped, handleCardClick }: CardProps) {
+function Card({ shape, isFlipped, handleCardClick }: CardProps) {
   return (
     <div
       className={`card ${isFlipped ? 'flipped' : ''}`}
